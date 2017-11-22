@@ -1,0 +1,43 @@
+{
+  "name": "sandbox",
+  "version": "0.0.1",
+  "description": "sandbox",
+  "license": "MIT",
+  "repository": "",
+  "author": "Catalin",
+  "keywords": [
+    ""
+  ],
+  "files": [
+    "exe"
+  ],
+  "main": "./exe/lib/index.js",
+  "typings": "./exe/lib/index.d.ts",
+  "scripts": {
+    "test": "gulp test",
+    "performance": "node --allow-natives-syntax --prof ./node_modules/mocha/bin/_mocha ./exe/**/*.spec.js"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/chai": "latest",
+    "@types/mocha": "latest",
+    "@types/node": "latest",
+    "@types/url-join": "latest",
+    "chai": "latest",
+    "del": "latest",
+    "dotbin": "latest",
+    "gulp": "latest",
+    "gulp-help": "latest",
+    "gulp-mocha": "latest",
+    "gulp-sourcemaps": "latest",
+    "gulp-tslint": "latest",
+    "gulp-typescript": "latest",
+    "merge2": "latest",
+    "source-map-support": "latest",
+    "tslint": "latest",
+    "typescript": "latest"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  }
+}
