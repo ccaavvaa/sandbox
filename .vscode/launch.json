@@ -22,12 +22,47 @@
             "outDir": null
         },
         {
+            "name": "Gulp",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceRoot}/node_modules/gulp/bin/gulp.js",
+            "stopOnEntry": false,
+            "args": [
+                "change-latest"
+            ],
+            "cwd": "${workspaceRoot}",
+            "preLaunchTask": null,
+            "runtimeExecutable": null,
+            "runtimeArgs": [
+                "--nolazy"
+            ],
+            "env": {
+                "NODE_ENV": "development",
+                "PORT": "3010"
+            },
+            "console": "internalConsole",
+            "sourceMaps": true,
+            "outFiles": [],
+            "skipFiles": [
+                "<node_internals>/**/*.js"
+            ]
+        },
+        {
             "name": "Test debug",
             "type": "node",
             "request": "launch",
             "program": "${workspaceRoot}/node_modules/mocha/bin/_mocha",
             "stopOnEntry": false,
-            "args": ["--reporter", "spec", "--timeout", "0", "--debug", "--require", "source-map-support/register", "./exe/test/**/*.js"],
+            "args": [
+                "--reporter",
+                "spec",
+                "--timeout",
+                "0",
+                "--debug",
+                "--require",
+                "source-map-support/register",
+                "./exe/test/**/*.js"
+            ],
             "cwd": "${workspaceRoot}",
             "preLaunchTask": null,
             "runtimeExecutable": null,
@@ -43,8 +78,7 @@
             "outDir": "${workspaceRoot}/exe/",
             "skipFiles": [
                 "<node_internals>/**/*.js"
-              ]
-
+            ]
         },
         {
             "name": "Attacher",
